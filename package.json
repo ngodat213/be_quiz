@@ -1,0 +1,19 @@
+{
+  "name": "be_quiz",
+  "version": "1.0.0",
+  "description": "A Node.js RESTFul API Flutter Quiz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "HydraCoder",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
