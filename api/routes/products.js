@@ -44,7 +44,7 @@ router.post('/', (req, res, next) => {
     .then(result => {
         console.log(result);
         res.status(201).json({
-            message: "Create product successfully!",
+            message: "Create stored",
             createProduct: {
                 name: result.name,
                 price: result.price,
