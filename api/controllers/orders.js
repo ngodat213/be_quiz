@@ -97,7 +97,7 @@ exports.orders_get_order = (req, res, next) => {
 
 exports.orders_delete_oder = (req, res, next) => {
     const id = req.params.orderId;
-    Product.deleteOne({_id: id})
+    Order.deleteOne({_id: id})
     .exec()
     .then(result => {
         res.status(200).json({

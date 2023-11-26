@@ -8,6 +8,8 @@ const dbUrl = 'mongodb+srv://hydra:Code26102003@cluster0.d0dwiwa.mongodb.net/Pod
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
+const jokeRoutes = require('./api/routes/jokes');
+const voteRoutes = require('./api/routes/votes');
 
 mongoose.connect(dbUrl);
 
@@ -30,6 +32,8 @@ app.use((req, res, next) => {
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 app.use('/user', userRoutes);
+app.use('/jokes', jokeRoutes);
+app.use('/votes', voteRoutes);
 
 app.use((req, res, next) => {
     const error = new Error('Not found');
